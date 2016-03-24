@@ -1,8 +1,12 @@
 *.iml
 .gradle
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
+/.idea
 .DS_Store
 /build
+/bin
 /captures
+/gradle
+/Libraries/droidservices/bin
+/app/bin
+
