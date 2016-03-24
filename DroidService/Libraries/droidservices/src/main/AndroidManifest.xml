@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.morgoo.droidservices">
+
+    <application>
+
+        <provider
+            android:name=".CoreContentProvider"
+            android:authorities="com.morgoo.droidservice"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":ServiceHolder" />
+
+    </application>
+
+</manifest>
