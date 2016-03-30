@@ -4,13 +4,6 @@
 
     <application>
 
-        <provider
-            android:name=".CoreContentProvider"
-            android:authorities="com.morgoo.droidservice"
-            android:enabled="true"
-            android:exported="false"
-            android:process=":ServiceHolder" />
-
     </application>
 
 </manifest>

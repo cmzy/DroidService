@@ -1,6 +1,5 @@
 package com.morgoo.droidservices;
 
-import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -54,8 +53,11 @@ class IServiceManagerImpl extends IServiceManager.Stub {
     }
 
     @Override
-    public void addIntentService(String callingPackageName, String name, Intent intent) {
-
+    public void addIntentService(String callingPackageName, String name, Intent intent) throws RemoteException {
+        //TODO
+        RemoteException remoteException = new RemoteException();
+        remoteException.initCause(new UnsupportedOperationException());
+        throw remoteException;
     }
 
     private static void ensureNotOnMainThread() {

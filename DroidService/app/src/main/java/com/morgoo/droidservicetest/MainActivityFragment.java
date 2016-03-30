@@ -22,6 +22,7 @@ public class MainActivityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
         try {
+            ServiceManager.getInstance().setAuthorities("com.morgoo.droidservicetest.CoreContentProvider");
             ServiceManager.getInstance().getService(getActivity(), "haa");
         } catch (RemoteException e) {
             e.printStackTrace();
